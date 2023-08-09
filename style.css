@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5f6fa;
+   
+}
+
+header{
+    background-color: #192a56;
+    height: 20%;
+    display: block;
+    
+}
+
+    header nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 50px;
+    }
+
+header nav a {
+    text-decoration: none;
+    color: #b8b8b8;
+    font-weight: bold;
+    
+    padding: 20px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header nav img {
+    height: 100px;
+    width: 100px;
+}
+
+.container1 {   
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    gap: 100px;
+    color: #192a56;
+    background-color: #f9f9fa;
+
+}
+
+.container1 h1 {
+    font-size: 50px;
+}
+
+.Header2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Header2 h1 {
+    font-weight: bold;
+    color: #142246;
+    
+}
+
+.Header2 h3 {
+    font-weight: 400;
+    color: #274592;
+}
+
+.cont-servicos{
+    
+        margin-top: 50px;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+margin: 50px;
+justify-content: center;
+
+}
+
+.cont-servicos h3 {
+    font-weight: bold;
+    
+}
+
+.um {
+    border: 1px solid #192a56;
+    border-radius: 30px;
+        display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.um img { height: 50px;
+    width: 50px;
+    margin-bottom: 50px;}
+
+.contato {
+background-color: #c7c7ca;
+    padding: 50px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.email {
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.Whatsapp {
+    text-align: center;
+    display: flex;
+    flex: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Whatsapp img {
+    width: 35px;
+    height: 35px;
+}
+
+.btnw {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btnw:hover {
+    border: #2ecc71;
+    background-color: rgba(46, 204, 112, 0.3);
+
+}
+
+.contato div a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+.contato div h1{
+    font-weight: bold;
+    color: #192a56;
+    
+      
+}
+
+.contato div p {
+    color: #274592;
+}
+
+.contato2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 50px
+}
+
+footer {background-color: #141414;
+color: #dcdde1;
+display: flex;
+flex-flow: column;
+justify-content: start;
+align-items: start;
+gap: 50px;
+padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c7c7ca;
+}
+
+/*  Modol  */
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #192a5648;
+    
+}
+
+.janela-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #000000af;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,-50%);
+    
+    
+}  
+
+.janela-modal.abrir {
+    display: flex;
+}
+
+
+
+
+.modal {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #c8c8c986;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.modal h1 {
+    font-weight: bold;
+    color: #192a56;
+    font-size: 50px
+}
+
+.modal p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #080d1b; 
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.saber-mais {
+    font-weight: 20px;
+    
+}
+
+.saber-mais a {
+    text-decoration: none;
+    color: #192a56
+}
+
+.saber-mais a:hover {
+    color: #4879f3 ;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0,-30px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 0.7s;
+}
+
+
+/* Paginas */
+
+.container-marketing {
+    display: block;
+    padding: 50px;
+}
+
+.container-marketing div {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    color: #192a56;
+    background-color: #f9f9fa;
+
+}
+
+.container-marketing div h1{
+    font-size: 50px;
+}
+
+.container-marketing div p{
+    font-size: 25px;
+}
